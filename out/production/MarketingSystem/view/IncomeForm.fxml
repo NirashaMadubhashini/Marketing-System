@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeFormContext" prefHeight="985.0" prefWidth="1900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeFormController">
+   <children>
+      <Label layoutX="640.0" layoutY="14.0" text="Income Reports Form" textFill="#273c75">
+         <font>
+            <Font name="Arial Bold" size="64.0" />
+         </font>
+      </Label>
+      <Separator layoutX="50.0" layoutY="95.0" prefHeight="13.0" prefWidth="1816.0" />
+      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="856.0" onAction="#backToHomeOnAction" prefHeight="96.0" prefWidth="243.0" style="-fx-background-color: #44bd32;" text="&lt;&lt;   Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ComboBox fx:id="cmbMonths" layoutX="1157.0" layoutY="228.0" prefHeight="44.0" prefWidth="327.0" promptText="Months" />
+      <Label layoutX="318.0" layoutY="250.0" prefHeight="53.0" prefWidth="163.0" text="Total  :">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItemTotal" layoutX="470.0" layoutY="250.0" prefHeight="53.0" prefWidth="132.0" text="0.00">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="351.0" prefHeight="53.0" prefWidth="490.0" text="Weekly Sell Item Count :">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="651.0" layoutY="478.0" prefHeight="53.0" prefWidth="310.0" text="Daily Income :">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="654.0" layoutY="571.0" prefHeight="53.0" prefWidth="359.0" text="Monthly Income :">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="651.0" layoutY="669.0" prefHeight="53.0" prefWidth="344.0" text="Annual Income :">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="654.0" layoutY="762.0" prefHeight="53.0" prefWidth="490.0" text="Customer Wise Income :">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblWeeklyItemCount" layoutX="830.0" layoutY="351.0" prefHeight="53.0" prefWidth="132.0" text="0">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDailyIncome" layoutX="996.0" layoutY="478.0" prefHeight="53.0" prefWidth="132.0" text="0.00">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMonthlyIncome" layoutX="1030.0" layoutY="571.0" prefHeight="53.0" prefWidth="132.0" text="0.00">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAnnualIncome" layoutX="1009.0" layoutY="669.0" prefHeight="53.0" prefWidth="132.0" text="0.00">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerWiseIncome" layoutX="1170.0" layoutY="762.0" prefHeight="53.0" prefWidth="132.0" text="0.00">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="1467.0" layoutY="111.0" prefHeight="45.0" prefWidth="106.0" text=" Date  :">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItemFormDate" layoutX="1593.0" layoutY="111.0" text="2021-08-16">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="168.0" layoutY="116.0" text="Time  :">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItemFormTime" layoutX="293.0" layoutY="116.0" text="19:19:56">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="1322.0" layoutY="482.0" mnemonicParsing="false" onAction="#DailyIncomeOnAction" prefHeight="45.0" prefWidth="108.0" style="-fx-background-color: #0097e6;" text="Daily" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1322.0" layoutY="575.0" mnemonicParsing="false" onAction="#MonthlyIncomeOnAction" prefHeight="45.0" prefWidth="108.0" style="-fx-background-color: #0097e6;" text="Monthly" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1322.0" layoutY="673.0" mnemonicParsing="false" onAction="#AnnualIncomeOnAction" prefHeight="45.0" prefWidth="108.0" style="-fx-background-color: #0097e6;" text="Annual" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="1323.0" layoutY="766.0" mnemonicParsing="false" onAction="#CustomerWiseIncomeOnAction" style="-fx-background-color: #0097e6;" text="Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="649.0" layoutY="255.0" mnemonicParsing="false" onAction="#FindTotalOnAction" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #0097e6;" text="Total" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="963.0" layoutY="351.0" mnemonicParsing="false" onAction="#SellItemOnAction" prefHeight="44.0" prefWidth="106.0" style="-fx-background-color: #0097e6;" text="Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

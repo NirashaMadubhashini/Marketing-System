@@ -1,10 +1,11 @@
-# Blue Ocean Hotel<br>
+# Marketing System-MVC<br>
 
-This is the second project of first semester done by using JavaFx
+This project is done by using MVC Architecture and MySQL database
 
 *MVC Architecture<br>
 *Java<br>
 *UI make using javaFx
+*database is MySQL
 
 <b>#DashBoard<br></b>
 ![DashBoard](src/assets/project/dashboard.png)<br>

@@ -4,7 +4,7 @@ This project is done by using MVC Architecture and MySQL database
 
 *MVC Architecture<br>
 *Java<br>
-*UI make using javaFx
+*UI make using javaFx<br>
 *database is MySQL
 
 <b>#DashBoard<br></b>
